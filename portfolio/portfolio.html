@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>portefolio</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#picture">PRESENTATION</a></li>
+                    <li><a href="#formation">FORMATION</a></li>
+                    <li><a href="#work">EXPERIENCE</a></li>
+                    <li><a href="#aware">COMPETANCE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <div><img class="picture" id="picture" src="image/image1.jpg" alt="image1"></div>
+            <div class="prep">
+                <h1>CARUEL Claude</h1> 
+                <h2>DEVELLOPEUR WEB, WEBMOBILE</h2>
+                <p>Bonjour, je m'appelle CARUEL Claude. Actuellement en formation, chez POPSCHOOL à LENS.
+                Après avoir travaillé 14 ans sur machine semi automatisé, j' ai voulu revenir vers un métier
+                qui évolue et qui me plait. Pour celà, j'ai du montrer ma motivation et mon envie d'apprendre, 
+                pour pouvoir intégret la formation de dévelloppeur web, webmobile de chez POPSCHOOL.  </p>
+                <button>téléchargement cv</button>
+            </div>
+            <div class="formation" id="formation">
+                <h2>FORMATION</h2>
+                <p>2020 : dévellloppeur web, webmobile ( POPSCHOOL LENS )</p>
+                <p>1998 - 2000 : bac pro MRBT ( lycée M. Robespierre LENS )</p>
+                <p>1996 - 1998 : bep électronique ( lycée H. Darras LIEVIN )</p>
+            </div>
+            <div class="work" id="work">
+                <h2>EXPERIENCE PROFESSIONNEL</h2>
+                <p>2005 - 2019 agent de production chez sefar fyltis billy bercleau</p>
+                <p>2003 - 2004 divers missions d'interim pour védior bis béthune</p>
+                <p>2001 - 2002 divers missions d'interim pour adia lens</p>
+                <p>2000 technicien tpe pour sicorfé sains laurent blangy </p>
+                <p>2000 manoeuvre pour l'oncle demarret vendin le vieil</p>
+            </div>
+            <div class="aware" id="aware">
+                <h2>COMPETANCE</h2>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+            <div class="contact" id="contact">
+                <h2>CONTACT</h2>
+                <form>
+                    <div>   
+                        <label for="mademoiselle">Melle</label>
+                        <input type="radio" name="sexe" id="MME">
+                    </div>
+                        <div>   
+                        <label for="madame">Mme</label>
+                        <input type="radio" name="sexe" id="sexe">
+                    </div>
+                    <div>   
+                        <label for="monsieur">Mr</label>
+                        <input type="radio" name="sexe" id="sexe">
+                    </div>
+                    <div>
+                        <label for="nom">Nom :</label>
+                        <input class="contactName" type="text" id="nom" placeholder="nom">
+                    </div>
+                    <div>
+                        <p>Message :</p>
+                        <textarea name="com" id="com" cols="72" rows="12"></textarea>
+                    </div>
+                </form>
+                <button>envoyer</button>
+            </div>
+        </div>
+    </body>
+</html>

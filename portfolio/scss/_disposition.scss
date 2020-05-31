@@ -1,0 +1,49 @@
+* {
+    margin: 0px; 
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.formation, .work, .aware, .contact, .prep {
+    width: 1100px;
+    margin: auto;
+}
+
+.formation h2, .work h2, .aware h2, .contact h2 {
+    border: 2px solid white;
+}
+
+a {
+    margin: 10px; 
+}
+
+nav {
+    padding: 15px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
+
+li, ul {
+    list-style: none;
+    line-height: 30px;
+}
+
+p {
+    font-size: 25px; 
+    line-height: 50px;
+}
+
+h2 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+h1 {
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
