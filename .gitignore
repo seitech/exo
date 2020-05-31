@@ -1,2 +1,6 @@
 .ds_Store
 ./porfolio/node_modules
+calculatrice/calculatrice.html
+calculatrice/css/style.css
+calculatrice/js/app.js 
+gitignore
