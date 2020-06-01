@@ -53,8 +53,14 @@ Afin que le calcul à l'écran se réinitialise
 // quelque chose
 // 3ème étape: Récupérer l'élément écran
 // 4ème étape: on vide le texte dans cet élément
+*/
+function reset (){
+    buttons = [];
+}
+let buttonAc = document.querySelector(".button__reset");
+buttonAc.addEventListener("click", reset);
 
-
+/*
 En tant qu'utilisateur,
 Je veux pouvoir appuyer sur une touche égale
 Afin que le calcul complet s'exécute et le résultat s'affiche à l'écran
