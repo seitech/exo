@@ -2,7 +2,8 @@
     border:1px solid rgb(151, 151, 151);
     width: 40rem;
     height: 41rem;
-    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .calcul__head {
@@ -18,7 +19,7 @@
 .calcul__operator {
     width: 6rem;
     height: 4rem;
-    margin: 23px 25px;
+    margin: 23px 29px;
     border-radius: 15%;
     font-size: 2rem;
     color: blue;
@@ -27,25 +28,70 @@
 .calcul__element {
     width: 6rem;
     height: 4rem;
-    margin: 23px 25px;
+    margin: 23px 29px;
     border-radius: 15%;
     font-size: 2rem;
+    position: relative;
+    top: -10rem;
+}
+
+.calcul__element_L3 {
+    width: 6rem;
+    height: 4rem;
+    margin: 23px 29px;
+    border-radius: 15%;
+    font-size: 2rem;
+    position: relative;
+    top: -20rem;
+}
+
+.calcul__element_L4 {
+    width: 6rem;
+    height: 4rem;
+    margin: 23px 29px;
+    border-radius: 15%;
+    font-size: 2rem;
+    position: relative;
+    top: -20rem;
+}
+.calcul__element_BP{
+    width: 6rem;
+    height: 4rem;
+    margin: 23px 29px;
+    border-radius: 15%;
+    font-size: 2rem;
+    position: relative;
+    top: -210px;
+    right: 306px;
+}
+
+.calcul__element_N0{
+    width: 6rem;
+    height: 4rem;
+    margin: 23px 29px;
+    border-radius: 15%;
+    font-size: 2rem;
+    position: relative;
+    top: -20rem;
 }
 
 .calcul__total {
     width: 6rem;
-    height: 20rem;
-    margin: 23px 25px;
+    height: 23rem;
+    margin: 23px 29px;
     border-radius: 5%;
     font-size: 2rem;
     background-color: blue;
 }
 
-.calcul__clear {
+.calcul__del {
     width: 6rem;
     height: 4rem;
-    margin: 23px 25px;
+    margin: 23px 29px;
     border-radius: 15%;
     font-size: 2rem;
     background-color: red;
+    position: relative;
+    top: -100px;
+    right: 153px;
 }

@@ -1,7 +1,7 @@
 export default function Calculator() {
     this.name = "calculatrice";
 
-// création de bouton
+// création des boutons
     this.createHTMLElement = function(tag,classes,parentElement,text) {
         let el = document.createElement(tag);
         if(classes) {
@@ -71,57 +71,57 @@ export default function Calculator() {
             },
            
             {
-                class: "calcul__element",
+                class: "calcul__element_L3",
                 id: "4",
                 text: "4",
                 number: 3
             },
             {
-                class: "calcul__element",
+                class: "calcul__element_L3",
                 id: "5",
                 text: "5",
                 number: 3
             },
             {
-                class: "calcul__element",
+                class: "calcul__element_L3",
                 id: "6",
                 text: "6",
                 number: 3
             },
             {
-                class: "calcul__element",
+                class: "calcul__del",
+                id: "supp",
+                text: "AC",
+                number: 5
+            },
+            {
+                class: "calcul__element_L4",
                 id: "1",
                 text: "1",
                 number: 4
             },
             {
-                class: "calcul__element",
+                class: "calcul__element_L4",
                 id: "2",
                 text: "2",
                 number: 4
             },
             {
-                class: "calcul__element",
+                class: "calcul__element_L4",
                 id: "3",
                 text: "3",
                 number: 4
             },
             {
-                class: "calcul__element",
-                id: "0",
-                text: "0",
-                number: 5
-            },
-            {
-                class: "calcul__element",
+                class: "calcul__element_BP",
                 id: ".",
                 text: ".",
                 number: 5
             },
             {
-                class: "calcul__clear",
-                id: "supp",
-                text: "AC",
+                class: "calcul__element_N0",
+                id: "0",
+                text: "0",
                 number: 5
             }
         ];
@@ -132,26 +132,55 @@ export default function Calculator() {
             button = this.createHTMLElement("button",lisArr[i].class,ul,lisArr[i].text);
         }
         // affichage
-
+        
         function printscreen() {
-            console.log(this.textContent);
             let screen = document.querySelector(".calcul__head");
             screen.textContent += this.textContent;
-        }
+        } 
         
+        
+        //console.log(x);
+        // recupération des boutons      
+
         let operators = document.querySelectorAll(".calcul__operator");
         let numbers = document.querySelectorAll(".calcul__element");
+        let numbers3 = document.querySelectorAll(".calcul__element_L3");
+        let numbers4 = document.querySelectorAll(".calcul__element_L4");
+        let numbers5 = document.querySelectorAll(".calcul__element_N0");
+        let point = document.querySelectorAll(".calcul__element_BP");
+        let dels = document.querySelectorAll(".calcul__del");
+        let totals = document.querySelectorAll(".calcul__total");
+
+        // affectation du role des boutons
+
         for(let i=0; i<operators.length;i++) {
             operators[i].addEventListener("click", printscreen);
         }
         for(let i=0; i<numbers.length;i++) {
             numbers[i].addEventListener("click", printscreen);
         }
-        // effacement de l'afficheur
-        let clears = document.querySelector(".calcul__clear");
+        for(let i=0; i<numbers3.length;i++) {
+            numbers3[i].addEventListener("click", printscreen);
+        }
+        for(let i=0; i<numbers4.length;i++) {
+            numbers4[i].addEventListener("click", printscreen);
+        }
+        for(let i=0; i<numbers5.length;i++) {
+            numbers5[i].addEventListener("click", printscreen);
+        }
+        for(let i=0; i<point.length;i++) {
+            point[i].addEventListener("click", printscreen);
+        }
+        for(let i=0; i<dels.length;i++) {
+            dels[i].addEventListener("click", printscreen);
+        }
+        for(let i=0; i<totals.length;i++) {
+            totals[i].addEventListener("click", printscreen);
+        }
         
-        // calcul de l'opération entrée
-        let total = document.querySelector(".calcul__total");
+        // dels.addEvenListener("click", delscreen);
+        // total.addEvenListener("click", resultat);
+        // besoin de eval pour avoir le résultat.
         
     }
 }
