@@ -2,7 +2,6 @@ class App extends React.Component {
     state = {
         name: "Your Name",
         text: "You comment",
-        comments:[this.name, this.text]
     }
 
     handlename = event => {
@@ -15,10 +14,10 @@ class App extends React.Component {
             text: event.target.value
         })
     }
+    
     handleSubmit = event => {
-        this.setState({
-            [comments]: value
-         });
+        event.preventDefault();
+        console.log(this.state);
     }
 
 
