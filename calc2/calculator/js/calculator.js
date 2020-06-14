@@ -1,5 +1,3 @@
-
-
 export default function Calculator() {
     this.name = "calculatrice";
 
@@ -19,8 +17,8 @@ export default function Calculator() {
     this.init = function() {
         let calculator = this.createHTMLElement("div","calcul",document.body);
         let screen = this.createHTMLElement("header","calcul__head",calculator);
-        let ul = this.createHTMLElement("ul","",calculator);
-        let li =  this.createHTMLElement("li","",ul);
+        let ul = this.createHTMLElement("div","",calculator);
+        let li =  this.createHTMLElement("div","",ul);
         
         let lisArr = [
             {
@@ -63,6 +61,12 @@ export default function Calculator() {
                 class: "calcul__element",
                 id: "9",
                 text: "9",
+                number: 2
+            },
+            {
+                class: "calcul__total",
+                id: "=",
+                text: "=",
                 number: 2
             },
            
@@ -131,16 +135,3 @@ export default function Calculator() {
     }
 
 }
-
-
-
-
-/*
-            {
-                class: "calcul__total",
-                id: "=",
-                text: "=",
-                number: 5
-            }
-            
-*/
